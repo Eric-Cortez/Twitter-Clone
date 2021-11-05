@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+
+div i {
+  color: white;
+  font-size: 300%;
+  padding-left: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-container {
+  /* display: flex;
+  flex-direction: row; */
+
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a b"
+    "a b"
+    "a b"
+    "c c";
+}
+
+.bottom-container{
+    grid-area: c;
+}
+
+.left-container {
+  background-image: url("/twitter.png");
+  grid-area: a;
+}
+
+.right-container {
+  background-color: rgb(19, 21, 22);
+  grid-area: b;
+}
+
+h1,
+h2 {
+  color: white;
+  
+}
+.left-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.google-sign-in img {
+  height: 30px;
+  width: 30px;
+}
+
+#google-btn {
+  font-family: "Google Sans", arial, sans-serif;
+  padding-left: 10px;
+}
+.google-sign-in {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24,26, 27);
+  display: flex;
+  border-radius: 35px;
+  border: 1px solid rgb(123, 115, 101);
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 64px;
+  color: rgb(208, 204, 198);
+  margin: 25px 25px;  
+}
+
+h2 {
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif; 
+  color: rgb(208, 204, 198);
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#terms {
+    margin-top: 10px;
+  color: #68767d;
+  font-size: 13px;
+}
+
+#terms span {
+    color: #1d9bf0
+}
+
+#account {
+    margin-top: 20px;
+    color: #d9d9d9;
+    font-size: 15px;
+}
+#account span {
+    color: #1d9bf0
+}
