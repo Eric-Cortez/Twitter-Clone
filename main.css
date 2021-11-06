@@ -12,13 +12,13 @@ div i {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
+/* main */
 .main-container {
   display: grid;
   grid-template-areas:
     "a b"
     "footer footer";
-  
+
 }
 
 .left-container img {
@@ -28,7 +28,7 @@ div i {
 
 .bottom-container{
     grid-area: footer;
-    
+
 }
 
 .left-container {
@@ -115,13 +115,13 @@ h1 {
   font-family: "Segoe UI",Helvetica,Arial,sans-serif;
   font-size: 64px;
   color: rgb(208, 204, 198);
-  margin: 25px 25px;  
+  margin: 25px 25px;
   font-stretch: extra-expanded;
-  
+
 }
 
 h2 {
-  font-family: "Segoe UI",Helvetica,Arial,sans-serif; 
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif;
   color: rgb(208, 204, 198);
   display: flex;
   align-items: flex-start;
@@ -220,7 +220,7 @@ footer {
 #brand,
 #adertising,
 #marketing,
-#privacy, 
+#privacy,
 #business,
 #cookie,
 #terms,
@@ -229,4 +229,3 @@ footer {
 #status {
     padding: 0 20px;
 }
-
