@@ -172,7 +172,7 @@ li {
     gap:10px;
 }
 
-
+/* bottom of page */
 footer {
   display: flex;
   flex-direction: column;
