@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   margin:0;
+  background-color: rgb(19, 21, 22);
+  font-family: "Google Sans", arial, sans-serif;
 }
 
 div i {
@@ -12,43 +14,40 @@ div i {
 }
 
 .main-container {
-  /* display: flex;
-  flex-direction: row; */
-
   display: grid;
   grid-template-areas:
     "a b"
-    "a b"
-    "a b"
-    "a b"
-    "c c";
+    "footer footer";
+  
+}
+
+.left-container img {
+    height: 100%;
+    width: 100%;
 }
 
 .bottom-container{
-    grid-area: c;
+    grid-area: footer;
+    
 }
 
 .left-container {
-  background-image: url("/twitter.png");
+  /* background-image: url("/twitter.png"); */
   grid-area: a;
 }
 
 .right-container {
+  flex-direction: column;
   background-color: rgb(19, 21, 22);
   grid-area: b;
 }
 
-h1,
-h2 {
-  color: white;
-  
-}
 .left-container img {
   height: 100%;
   width: 100%;
 }
 
-.google-sign-in img {
+.sign-in-btn img {
   height: 30px;
   width: 30px;
 }
@@ -57,19 +56,59 @@ h2 {
   font-family: "Google Sans", arial, sans-serif;
   padding-left: 10px;
 }
-.google-sign-in {
+
+i.fab.fa-apple {
+    padding: 3px;
+
+    font-size: 30px;
+}
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 400px;
+}
+
+.sign-in-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24,26, 27);
+    display:flex;
+    color: rgb(208, 204, 198);
+    border-radius: 35px;
+    padding: 3px 0;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.sign-up .sign-in-btn + .sign-in-btn + .sign-in-btn{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Google Sans", arial, sans-serif;
+}
+
+.sign-in-btn {
   align-items: center;
   justify-content: center;
   background-color: rgb(24,26, 27);
-  display: flex;
+  display: inline-flex;
+  color: rgb(208, 204, 198);
   border-radius: 35px;
   border: 1px solid rgb(123, 115, 101);
+  padding: 3px 60px;
+  margin-left: 25px;
+}
+
+.TOS {
+    padding-left:30px;
 }
 
 .welcome-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 }
 
 h1 {
@@ -77,6 +116,8 @@ h1 {
   font-size: 64px;
   color: rgb(208, 204, 198);
   margin: 25px 25px;  
+  font-stretch: extra-expanded;
+  
 }
 
 h2 {
@@ -85,22 +126,17 @@ h2 {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  margin-left: 60px;
+  margin-left:33px;
+  margin-bottom: 35px;
 }
 
-
-
-
-
-
-
-
-
-
+#als {
+    color: #1d9bf0;
+}
 
 #terms {
     margin-top: 10px;
-  color: #68767d;
+  color: rgb(97,106, 113);
   font-size: 13px;
 }
 
@@ -108,11 +144,89 @@ h2 {
     color: #1d9bf0
 }
 
+#term1:hover{
+    text-decoration: underline;
+}
+#term2:hover{
+    text-decoration: underline;
+}
+#term3:hover{
+    text-decoration: underline;
+}
+
 #account {
     margin-top: 20px;
-    color: #d9d9d9;
+    color: rgb(212, 212,212);
+    font-weight: 700;
     font-size: 15px;
+    padding-bottom: 110px;
 }
-#account span {
+#account + span + span{
     color: #1d9bf0
 }
+
+li {
+    color: rgb(97, 106, 113);
+    list-style: none;
+    font-size: 13px;
+    gap:10px;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+  grid-area: footer;
+}
+
+#top-text{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+}
+
+#bottom-text{
+    padding-top:7px;
+    padding-bottom:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer1 {
+  display: inline-flex;
+}
+
+
+.horizontal-list {
+    width: 100%;
+}
+
+.horizontal-list-top li {
+    display: inline;
+}
+
+.horizontal-list-bottom li {
+   display: inline;
+}
+#settings,
+#devs,
+#copy,
+#careers,
+#brand,
+#adertising,
+#marketing,
+#privacy, 
+#business,
+#cookie,
+#terms,
+#ads,
+#blog,
+#status {
+    padding: 0 20px;
+}
+
