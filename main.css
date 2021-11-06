@@ -213,6 +213,8 @@ footer {
 .horizontal-list-bottom li {
    display: inline;
 }
+
+/* padding for bottom */
 #settings,
 #devs,
 #copy,
